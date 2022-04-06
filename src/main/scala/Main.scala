@@ -1,5 +1,5 @@
 import scopt.OptionParser
-import problems.Problem1
+import problems._
 
 case class Arguments(
     problem: String = "",
@@ -24,6 +24,7 @@ object Main extends App {
 
     arguments.problem match {
       case "1" => Problem1.run(List(1, 1, 2, 3, 5, 8))
+      case "2" => Problem2.run(List(1, 1, 2, 3, 5, 8))
       case _   => println("Problem not found!")
     }
   }
