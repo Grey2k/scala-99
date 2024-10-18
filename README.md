@@ -23,13 +23,17 @@ https://www.scala-sbt.org/download.html
 Compile & Run
 
 ```
-// sbt compile "run --problem <problem-number>"
+## if jenv is needed
+jenv shell 11
+
+## sbt compile "run --problem <problem-number>"
 sbt compile "run --problem 1"
 ```
 
 Tests
 
 ```
+# Run tests
 sbt test
 ```
 
